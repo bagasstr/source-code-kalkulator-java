@@ -1,0 +1,88 @@
+import java.util.Scanner;
+public class soalNo1 {
+    public static void main(String[] args) {
+        
+        String merk, jenis;
+        Scanner input = new Scanner (System.in);
+        
+        //Perulangan For
+        for(String i = "Y"; i.equals("Y")||i.equals("y");)
+        {
+           //Pilihan Merk Motor
+           System.out.println("Y. Yamaha");
+           System.out.println("H. Honda");
+           System.out.println("S. Suzuki");
+           //Input
+           System.out.print("Masukan merk motor: ");
+           merk = input.nextLine();
+           //Proses
+           if (merk.equals("Y"))
+           {
+              System.out.println("Yamaha");
+           } 
+           else if (merk.equals("H"))
+           {
+              System.out.println("Honda");
+           } 
+           else if (merk.equals("S"))
+           {
+              System.out.println("Suzuki");
+           } 
+           else {
+              System.out.println("merk tidak tersedia");
+           }
+           
+           //Pilihan Jenis Motor
+           System.out.println();
+           System.out.println("Y01. Yamaha Mio 18.000.000");
+           System.out.println("Y02. Yamaha Crf 20.000.000");
+           System.out.println("H01. Honda Beat 22.000.000");
+           System.out.println("H02. Honda Scoopy 25.000.000");
+           System.out.println("S01. Suzuki Satria 27.000.000");
+           System.out.println("S02. Suzuki GSX 17.000.000");
+           //Input
+           System.out.print("Masukan jenis motor: ");
+           jenis = input.nextLine();
+        
+           System.out.println();
+           //Proses 
+           if (jenis.equals("Y01"))
+           {
+               System.out.println("Motor Yamaha Mio");
+               System.out.println("Harga jual 18.000.000");
+           }
+           else if (jenis.equals("Y02"))
+           {
+               System.out.println("Motor Yamaha Aerox");
+               System.out.println("Harga jual 20.000.000");
+           }
+           else if (jenis.equals("H01"))
+           {
+               System.out.println("Motor Honda Beat");
+               System.out.println("Harga jual 22.000.000");
+           }
+           else if (jenis.equals("H02"))
+           {
+               System.out.println("Motor Honda Scoopy");
+               System.out.println("Harga jual 25.000.000");
+           }
+           else if (jenis.equals("S01"))
+           {
+               System.out.println("Motor Suzuki Satria");
+               System.out.println("Harga jual 27.000.000");
+           }
+           else if (jenis.equals("S02"))
+           {
+               System.out.println("Motor Suzuki GSX");
+               System.out.println("Harga jual 17.000.000");
+           }
+           else{
+               System.out.println("merk tidak tersedia");
+           }
+           
+           //Perulangan
+           System.out.print("Input data lagi? Y/T: ");
+           i = input.nextLine();
+        }
+    }
+}
